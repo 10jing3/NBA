@@ -1,0 +1,118 @@
+/* Global styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: green;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align logo to left and navigation to right */
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: white;
+    color: green;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url("hero-image.jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 150px 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px; /* Add margin to push content below the fixed header */
+  }
+  
+  .hero h1 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  /* Content section styles */
+  .content {
+    margin: 40px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .content .text{
+    max-width: 400px;
+  }
+  
+  .content h2 {
+    color: green;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .content img{
+    width: 100%;
+    border-radius: 12px;
+  }
+  .hero h1{
+    color: green;
+  }
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: 50px;
+  }
+  .jersey{
+    display: flex;
+  }
+
+  .jersey img{
+    width: 30%;
+    object-fit: contain;
+  }
